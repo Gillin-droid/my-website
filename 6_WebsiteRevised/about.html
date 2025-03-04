@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+            margin: 0;
+            background-color: #445566;
+        }
+
+        header {
+            background-color: #2B2F33;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: 90px;
+            width: 390px;
+        }
+
+        .divider {
+            width: 3px;
+            height: 90px;
+            background-color: #fff;
+            margin-left: 20px;
+        }
+
+        .nav-bar {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        .nav-bar li {
+            margin: 0 15px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .nav-bar a:hover {
+            background-color: #496D91;
+            color: #2B2F33;
+        }
+
+        main {
+            text-align: center;
+        }
+
+
+        @keyframes pfpRotate {
+            0% {transform: rotate(0deg);}
+            25% {transform: rotate(20deg);}
+            50% {transform: rotate(-20deg);}
+            75% {transform: rotate(20deg);}
+            100% {transform: rotate(0deg);}
+        }
+
+        h1 {
+            border: 2px solid #2B2F33;
+            background-color: #496D91;
+            color: #fff;
+            padding: 5px 10px;
+            width: 30%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 2%;
+            margin-bottom: 3%;
+        }
+
+        h2 {
+            border: 2px solid #2B2F33;
+            background-color: #496D91;
+            color: #fff;
+            padding: 5px 10px;
+            width: 20%;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 3%;
+        }
+
+        .main-text {
+            text-align: center;
+            font-size: 20px;
+            margin:0 200px;
+            margin-bottom: 50px;
+            padding: 15px;
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .main-text:hover {
+            transform: scale(110%);
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: 0.5s;
+            
+
+            animation-name: pfpRotate;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+        }
+
+        .member img:hover {
+            transform: scale(110%);
+        }
+
+        .member-name {
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2B2F33;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar-logo">
+            <img src="AP Computer PT Logo.png">
+            <div class="divider"></div>
+        </div>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donation.html">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>About Our Project</h1>
+        <p class="main-text">Our project focuses on supporting pets 
+            by providing essential food and water, ensuring they 
+            thrive in their environment. Our top priority is to 
+            enhance their quality of life and promote their 
+            well-being through consistent care and compassion.</p>
+        <h2>Our Team</h2>
+
+        <div class="team-members">
+            <div class="member">
+                <img src="Luke Pic.jpg">
+                <p class="member-name">Luke Dela Cruz</p>
+            </div>
+            <div class="member">
+                <img src="Sergio Pic.jpg">
+                <p class="member-name">Sergio Santiago</p>
+            </div>
+            <div class="member">
+                <img src="Gillin Pic.jpg">
+                <p class="member-name">Gillin Tauro</p>
+            </div>
+            <div class="member">
+                <img src="Sancho Pic.jpg">
+                <p class="member-name">Sancho Timbang</p>
+            </div>
+            <div class="member">
+                <img src="Ventura Pic.jpg">
+                <p class="member-name">Anton Ventura</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Community Outreach Program | Luke Dela Cruz</p>
+    </footer>
+</body>
+</html>

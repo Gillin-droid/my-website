@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+            margin: 0;
+            background-color: #445566;
+        }
+
+        header {
+            background-color: #2B2F33;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: 90px;
+            width: 390px;
+        }
+
+        .divider {
+            width: 3px;
+            height: 90px;
+            background-color: #fff;
+            margin-left: 20px;
+        }
+
+        .nav-bar {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        .nav-bar li {
+            margin: 0 15px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .nav-bar a:hover {
+            background-color: #496D91;
+            color: #2B2F33;
+        }
+
+        main {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .main-img {
+            width: 40%;
+            border-radius: 8px;
+            filter: grayscale(100%);
+            transition: 0.5s;
+        }
+
+        .main-img:hover {
+            filter: grayscale(0%);
+            transform: scale(110%);
+        }
+
+        .description {
+            text-align: center;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            max-width: 50%;
+            margin-right: auto;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: #2B2F33;
+            color: white;
+            width: 100%;
+        }
+
+        .form-container button {
+            background-color: #496D91;
+            color: white;
+            border: 2px solid white;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .form-container button:hover {
+            background-color: #2B2F33;
+            transform: scale(105%);
+        }
+
+        h1 {
+            background-color: #496D91;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 5px;
+            width: 350px;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2B2F33;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar-logo">
+            <img src="AP Computer PT Logo.png">
+            <div class="divider"></div>
+        </div>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donation.html">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1>Contact Us</h1>
+            <p class="description">If you have any questions or need more information, feel free to fill out the contact form below. We appreciate your interest!</p>
+            <form action="/submit_form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div>
+            
+        </div>
+        <img class="main-img" src="Stray Cat 2.png">
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Community Outreach Program | Anton Ventura</p>
+    </footer>
+</body>
+</html>

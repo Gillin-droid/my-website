@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+            margin: 0;
+            background-color: #445566;
+        }
+
+        header {
+            background-color: #2B2F33;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: 90px;
+            width: 390px;
+        }
+
+        .divider {
+            width: 3px;
+            height: 90px;
+            background-color: #fff;
+            margin-left: 20px;
+        }
+
+        .nav-bar {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        .nav-bar li {
+            margin: 0 15px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .nav-bar a:hover {
+            background-color: #496D91;
+            color: #2B2F33;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .donation-form {
+            background-color: #2B2F33;
+            border: 2px solid #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 700px;
+            box-sizing: border-box;
+        }
+
+        .donation-form h1 {
+            color: #fff;
+        }
+
+        .donation-form label {
+            color: white;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .donation-form input, .donation-form button {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background-color: #2B2F33;
+            color: white;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .donation-form button {
+            background-color: #496D91;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .donation-form button:hover {
+            background-color: #2B2F33;
+            transform: scale(105%);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2B2F33;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar-logo">
+            <img src="AP Computer PT Logo.png">
+            <div class="divider"></div>
+        </div>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donation.html">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="donation-form">
+            <h1>Support Our Cause</h1>
+            <p>By making a donation, you can support our cause and help us provide food, care, and a better life for animals in need.</p>
+            <form action="/submit_donation" method="POST">
+                <label for="custom-amount">Enter your donation amount:</label>
+                <input type="number" id="custom-amount" name="custom-amount" placeholder="Enter custom amount" min="1" required>
+                <button class="SubBtn"type="submit">Donate Now</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Community Outreach Program | Sergio Santiago</p>
+    </footer>
+</body>
+</html>

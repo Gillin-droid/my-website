@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+            margin: 0;
+            background-color: #445566;
+        }
+
+        header {
+            background-color: #2B2F33;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: 90px;
+            width: 390px;
+        }
+
+        .divider {
+            width: 3px;
+            height: 90px;
+            background-color: #fff;
+            margin-left: 20px;
+        }
+
+        .nav-bar {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        .nav-bar li {
+            margin: 0 15px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #496D91;
+            color: #2B2F33;
+        }
+
+        h1 {
+            border: 2px solid #2B2F33;
+            background-color: #496D91;
+            color: #fff;
+            padding: 5px 10px;
+            width: 30%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 2%;
+            margin-bottom: 3%;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .programs {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+            background-color: white;
+            color: #2B2F33;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .programs:hover {
+            transform: scale(110%);
+        }
+
+        .program-title {
+            border: 2px solid #2B2F33;
+            background-color: #496D91;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+
+        .program-description {
+            font-size: 14px;
+            line-height: 1.4;
+            color: #2B2F33;
+        }
+
+        section {
+            margin-top: 40px;
+        }
+
+        h2 {
+            border: 2px solid #2B2F33;
+            background-color: #496D91;
+            color: #fff;
+            padding: 5px 10px;
+            width: 20%;
+            text-align: center;
+            margin: 40px auto 60px auto;
+        }
+
+        .main-text {
+            text-align: center;
+            margin: 0 200px 60px;
+            font-size: 20px;
+            padding: 15px;
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .main-text:hover {
+            transform: scale(110%);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2B2F33;
+            width: 100%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar-logo">
+            <img src="AP Computer PT Logo.png">
+            <div class="divider"></div>
+        </div>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donation.html">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Our Program</h1>
+    <main>
+        <div class="programs">
+            <div class="program-title">Every Paw Deserves a Loving Home</div>
+            <p class="program-description">
+                This is the only program that we have set. In this 
+                program, we will establish a dedicated facebook page that 
+                will advertise these dogs and cats to help them find loving 
+                homes. We will find willing, responsible, and capable volunteers in 
+                our classroom that will manage this page.
+            </p>
+        </div>
+    </main>
+    <section>
+        <h2>Impact</h2>
+        <p class="main-text">
+            Our Project's Goal and Impact is to 
+            give pets a second chance at living a meaningful and 
+            wonderful life and give them enjoyment in the time 
+            they still have. Hopefully our team can provide these 
+            pets with the materials they need for survival.
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Community Outreach Program | Sancho Timbang</p>
+    </footer>
+</body>
+</html>
